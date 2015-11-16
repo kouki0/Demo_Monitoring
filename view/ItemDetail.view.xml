@@ -1,0 +1,47 @@
+<core:View controllerName="monitoring.view.ItemDetail" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form"
+	xmlns:form="sap.ui.layout.form" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+	<Page backgroundDesign="Standard" navButtonPress="onNavBack" showNavButton="true" title="Warehouse Task">
+		<content>
+			<SearchField width="90%" class="sapUiSmallMargin" />
+			<form:SimpleForm minWidth="1024">
+				<core:Title emphasized="false" text="Warehouse Task Details"/>
+				<List growing="true" growingScrollToLoad="true" id="__list2">
+					<items>
+						<StandardListItem description="{Mandt}" id="__item6" title="{/#WarehouseTask/Mandt/@sap:label}" type="Active"/>
+						<StandardListItem description="{Lgnum}" id="__item7" title="{/#WarehouseTask/Lgnum/@sap:label}" type="Active"/>
+						<StandardListItem description="{Tanum}" id="__item8" title="{/#WarehouseTask/Tanum/@sap:label}" type="Active"/>
+						<StandardListItem description="{Tostat}" id="__item9" title="{/#WarehouseTask/Tostat/@sap:label}" type="Active"/>
+						<StandardListItem description="{Priority}" id="__item10" title="{/#WarehouseTask/Priority/@sap:label}" type="Active"/>
+						<StandardListItem description="{Matid}" id="__item11" title="{/#WarehouseTask/Matid/@sap:label}" type="Active"/>
+						<StandardListItem description="{Batchid}" id="__item12" title="{/#WarehouseTask/Batchid/@sap:label}" type="Active"/>
+						<StandardListItem description="{Entitled}" id="__item13" title="{/#WarehouseTask/Entitled/@sap:label}" type="Active"/>
+						<StandardListItem description="{Meins}" id="__item14" title="{/#WarehouseTask/Meins/@sap:label}" type="Active"/>
+						<StandardListItem description="{Altme}" id="__item15" title="{/#WarehouseTask/Altme/@sap:label}" type="Active"/>
+						<StandardListItem description="{Vsolm}" id="__item16" title="{/#WarehouseTask/Vsolm/@sap:label}" type="Active"/>
+						<StandardListItem description="{Vsola}" id="__item17" title="{/#WarehouseTask/Vsola/@sap:label}" type="Active"/>
+						<StandardListItem description="{Weight}" id="__item18" title="{/#WarehouseTask/Weight/@sap:label}" type="Active"/>
+						<StandardListItem description="{UnitW}" id="__item19" title="{/#WarehouseTask/UnitW/@sap:label}" type="Active"/>
+						<StandardListItem description="{Volum}" id="__item20" title="{/#WarehouseTask/Volum/@sap:label}" type="Active"/>
+						<StandardListItem description="{UnitV}" id="__item21" title="{/#WarehouseTask/UnitV/@sap:label}" type="Active"/>
+						<StandardListItem description="{Vlpla}" id="__item22" title="{/#WarehouseTask/Vlpla/@sap:label}" type="Active"/>
+						<StandardListItem description="{Nlpla}" id="__item23" title="{/#WarehouseTask/Nlpla/@sap:label}" type="Active"/>
+						<StandardListItem description="{Who}" id="__item24" title="{/#WarehouseTask/Who/@sap:label}" type="Active"/>
+						<StandardListItem description="{Huid}" id="__item25" title="{/#WarehouseTask/Huid/@sap:label}" type="Active"/>
+						<StandardListItem description="{Whoseq}" id="__item26" title="{/#WarehouseTask/Whoseq/@sap:label}" type="Active"/>
+					</items>
+					<customData><core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true"/><core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true"/><core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true"/></customData>
+				</List>
+			</form:SimpleForm>
+		</content>
+		<footer>
+			<OverflowToolbar id="footerToolbar">
+				<ToolbarSpacer id="footerToolbarSpacer"/>
+				<Button id="assignButton" press="onAssignButtonPressed" text="{i18n&gt;xbut.assign}" type="Accept"/>
+				<Button id="unassignButton" press="onUnassignButtonPressed" text="{i18n&gt;xbut.unassign}" type="Reject"/>
+				<Button id="lockButton" press="" text="{i18n&gt;xbut.lock}" type="Default"/>
+				<Button id="unlockButton" press="" text="{i18n&gt;xbut.unlock}" type="Transparent"/>
+				<Button id="changeLSD" press="onLsdButtonPressed" text="{i18n&gt;xbut.lsd}" type="Transparent"/>
+			</OverflowToolbar>
+		</footer>
+	</Page>
+</core:View>

@@ -1,0 +1,20 @@
+<core:FragmentDefinition id="lsdfrag" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns="sap.m">
+	<Dialog class="sapUiContentPadding" id="lsdDialog" title="Choose a date">
+		<content>
+			<l:VerticalLayout id="verticalLayout3" width="100%">
+				<VBox>
+					<Label design="Bold" text="Select Date"/>
+					<Input design="Bold" id="sdate" tooltip="Select valid date" type="Date" valueStateText="Select Valid Date" width="60%"/>
+					<Label design="Bold" text="Select Time"/>
+					<DateTimeInput id="time" type="Time" width="60%"/>
+				</VBox>
+			</l:VerticalLayout>
+		</content>
+		<beginButton>
+			<Button id="okButton3" press="onLsdConfirmAction" text="OK"/>
+		</beginButton>
+		<endButton>
+			<Button id="cancelButton3" press="onLsdCancelAction" text="Cancel"/>
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>

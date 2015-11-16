@@ -1,0 +1,171 @@
+[{
+	"Mandt": "Mandt 1",
+	"Lgnum": "Lgnum 1",
+	"Who": "Who 1",
+	"Wave": "Wave 1",
+	"Status": "Completed",
+	"StartBin": "StartBin 1",
+	"Whoid": "00",
+	"__metadata": {
+		"uri": "WarehouseOrderSet(Mandt='Mandt 1',Lgnum='Lgnum 1',Who='Who 1')",
+		"type": "ZDEMOSRV_SRV.WarehouseOrder"
+	},
+	"OrderToTasks": {
+		"__deferred": {
+			"uri": "WarehouseOrderSet(Mandt='Mandt 1',Lgnum='Lgnum 1',Who='Who 1')/OrderToTasks"
+		}
+	}
+}, {
+	"Mandt": "Mandt 2",
+	"Lgnum": "Lgnum 2",
+	"Who": "Who 2",
+	"Wave": "Wave 2",
+	"Status": "Inprocessing",
+	"StartBin": "StartBin 2",
+	"Whoid": "001",
+	"__metadata": {
+		"uri": "WarehouseOrderSet(Mandt='Mandt 2',Lgnum='Lgnum 2',Who='Who 2')",
+		"type": "ZDEMOSRV_SRV.WarehouseOrder"
+	},
+	"OrderToTasks": {
+		"__deferred": {
+			"uri": "WarehouseOrderSet(Mandt='Mandt 2',Lgnum='Lgnum 2',Who='Who 2')/OrderToTasks"
+		}
+	}
+}, {
+	"Mandt": "Mandt 3",
+	"Lgnum": "Lgnum 3",
+	"Who": "Who 3",
+	"Wave": "Wave 3",
+	"Status": "Cancelled",
+	"StartBin": "StartBin 3",
+	"Whoid": "000",
+	"__metadata": {
+		"uri": "WarehouseOrderSet(Mandt='Mandt 3',Lgnum='Lgnum 3',Who='Who 3')",
+		"type": "ZDEMOSRV_SRV.WarehouseOrder"
+	},
+	"OrderToTasks": {
+		"__deferred": {
+			"uri": "WarehouseOrderSet(Mandt='Mandt 3',Lgnum='Lgnum 3',Who='Who 3')/OrderToTasks"
+		}
+	}
+}, {
+	"Mandt": "Mandt 4",
+	"Lgnum": "Lgnum 4",
+	"Who": "Who 4",
+	"Wave": "Wave 4",
+	"Status": "Completed",
+	"StartBin": "StartBin 4",
+	"Whoid": "0101",
+	"__metadata": {
+		"uri": "WarehouseOrderSet(Mandt='Mandt 4',Lgnum='Lgnum 4',Who='Who 4')",
+		"type": "ZDEMOSRV_SRV.WarehouseOrder"
+	},
+	"OrderToTasks": {
+		"__deferred": {
+			"uri": "WarehouseOrderSet(Mandt='Mandt 4',Lgnum='Lgnum 4',Who='Who 4')/OrderToTasks"
+		}
+	}
+}, {
+	"Mandt": "Mandt 5",
+	"Lgnum": "Lgnum 5",
+	"Who": "Who 5",
+	"Wave": "Wave 5",
+	"Status": "Cancelled",
+	"StartBin": "StartBin 5",
+	"Whoid": "11100",
+	"__metadata": {
+		"uri": "WarehouseOrderSet(Mandt='Mandt 5',Lgnum='Lgnum 5',Who='Who 5')",
+		"type": "ZDEMOSRV_SRV.WarehouseOrder"
+	},
+	"OrderToTasks": {
+		"__deferred": {
+			"uri": "WarehouseOrderSet(Mandt='Mandt 5',Lgnum='Lgnum 5',Who='Who 5')/OrderToTasks"
+		}
+	}
+}, {
+	"Mandt": "Mandt 6",
+	"Lgnum": "Lgnum 6",
+	"Who": "Who 6",
+	"Wave": "Wave 6",
+	"Status": "Inprocessing",
+	"StartBin": "StartBin 6",
+	"Whoid": "1000",
+	"__metadata": {
+		"uri": "WarehouseOrderSet(Mandt='Mandt 6',Lgnum='Lgnum 6',Who='Who 6')",
+		"type": "ZDEMOSRV_SRV.WarehouseOrder"
+	},
+	"OrderToTasks": {
+		"__deferred": {
+			"uri": "WarehouseOrderSet(Mandt='Mandt 6',Lgnum='Lgnum 6',Who='Who 6')/OrderToTasks"
+		}
+	}
+}, {
+	"Mandt": "Mandt 7",
+	"Lgnum": "Lgnum 7",
+	"Who": "Who 7",
+	"Wave": "Wave 7",
+	"Status": "Completed",
+	"StartBin": "StartBin 7",
+	"Whoid": "01001",
+	"__metadata": {
+		"uri": "WarehouseOrderSet(Mandt='Mandt 7',Lgnum='Lgnum 7',Who='Who 7')",
+		"type": "ZDEMOSRV_SRV.WarehouseOrder"
+	},
+	"OrderToTasks": {
+		"__deferred": {
+			"uri": "WarehouseOrderSet(Mandt='Mandt 7',Lgnum='Lgnum 7',Who='Who 7')/OrderToTasks"
+		}
+	}
+}, {
+	"Mandt": "Mandt 8",
+	"Lgnum": "Lgnum 8",
+	"Who": "Who 8",
+	"Wave": "Wave 8",
+	"Status": "",
+	"StartBin": "StartBin 8",
+	"Whoid": "00001",
+	"__metadata": {
+		"uri": "WarehouseOrderSet(Mandt='Mandt 8',Lgnum='Lgnum 8',Who='Who 8')",
+		"type": "ZDEMOSRV_SRV.WarehouseOrder"
+	},
+	"OrderToTasks": {
+		"__deferred": {
+			"uri": "WarehouseOrderSet(Mandt='Mandt 8',Lgnum='Lgnum 8',Who='Who 8')/OrderToTasks"
+		}
+	}
+}, {
+	"Mandt": "Mandt 9",
+	"Lgnum": "Lgnum 9",
+	"Who": "Who 9",
+	"Wave": "Wave 9",
+	"Status": "Completed",
+	"StartBin": "StartBin 9",
+	"Whoid": "000111",
+	"__metadata": {
+		"uri": "WarehouseOrderSet(Mandt='Mandt 9',Lgnum='Lgnum 9',Who='Who 9')",
+		"type": "ZDEMOSRV_SRV.WarehouseOrder"
+	},
+	"OrderToTasks": {
+		"__deferred": {
+			"uri": "WarehouseOrderSet(Mandt='Mandt 9',Lgnum='Lgnum 9',Who='Who 9')/OrderToTasks"
+		}
+	}
+}, {
+	"Mandt": "Mandt 10",
+	"Lgnum": "Lgnum 10",
+	"Who": "Who 10",
+	"Wave": "Wave 10",
+	"Status": "Inprocessing",
+	"StartBin": "StartBin 10",
+	"Whoid": "100000",
+	"__metadata": {
+		"uri": "WarehouseOrderSet(Mandt='Mandt 10',Lgnum='Lgnum 10',Who='Who 10')",
+		"type": "ZDEMOSRV_SRV.WarehouseOrder"
+	},
+	"OrderToTasks": {
+		"__deferred": {
+			"uri": "WarehouseOrderSet(Mandt='Mandt 10',Lgnum='Lgnum 10',Who='Who 10')/OrderToTasks"
+		}
+	}
+}]

@@ -1,0 +1,24 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns="sap.m" id="unassignfrag">
+	<Dialog class="sapUiContentPadding" id="unassignDialog"
+		title="Unassign Warehouse Task">
+		<content>
+			<l:VerticalLayout id="verticalLayout2" width="100%">
+				<Text id="approvalText2"
+					text="Select Resource"/>
+				<ComboBox id="comboBox2" placeholder="Please Select a Name" 
+				items="{
+					path: '/HandlingUnitSet',
+					sorter: { path: 'Mandt' }
+				}">
+				<core:Item key="{Huident}" text="{Mandt}" />
+			</ComboBox>
+			</l:VerticalLayout>
+		</content>
+		<beginButton>
+			<Button id="okButton2" press="onUnassignConfirmAction" text="OK"/>
+		</beginButton>
+		<endButton>
+			<Button id="cancelButton2" press="onUnassignCancelAction" text="Cancel"/>
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>

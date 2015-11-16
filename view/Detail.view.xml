@@ -1,0 +1,93 @@
+<mvc:View controllerName="monitoring.view.Detail" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+	<Page id="detailPage" navButtonPress="onNavBack" showNavButton="{device&gt;/isPhone}" title="{i18n&gt;detailTitle}">
+		<content>
+			<ObjectHeader iconActive="false" id="detailHeader" introActive="false" number="{Who}" numberUnit="{Status}" title="{Lgnum}" titleActive="false">
+				<attributes id="detailAttributes">
+					<ObjectAttribute active="false" id="attribute" text="{i18n&gt;detailText}"/>
+				</attributes>
+				<firstStatus id="detailStatus">
+					<ObjectStatus id="status" text="{Whoid}"/>
+				</firstStatus>
+			</ObjectHeader>
+			<IconTabBar expanded="{device&gt;/isNoPhone}" id="idIconTabBar">
+				<items id="detailsItems">
+					<IconTabFilter design="Horizontal" icon="sap-icon://hint" id="iconTabFilter1" key="selfInfo" text="Information" textDirection="Inherit">
+						<content>
+							<f:SimpleForm columnsL="1" editable="false" emptySpanL="4" emptySpanM="4" id="iconTabFilter1form" labelSpanL="3" labelSpanM="3"
+								layout="ResponsiveGridLayout" minWidth="1024">
+								<f:content>
+									<Label id="label1" text="{/#WarehouseOrder/Lgnum/@sap:label}"/>
+									<Text id="text1" maxLines="0" text="{Lgnum}"/>
+									<Label id="label2" text="{/#WarehouseOrder/Who/@sap:label}"/>
+									<Text id="text2" maxLines="0" text="{Who}"/>
+									<Label id="label7" text="{/#WarehouseOrder/Whoid/@sap:label}"/>
+									<Text id="text7" maxLines="0" text="{Whoid}"/>
+									<Label id="label3" text="{/#WarehouseOrder/Wave/@sap:label}"/>
+									<Text id="text3" maxLines="0" text="{Wave}"/>
+									<Label id="label5" text="{/#WarehouseOrder/Status/@sap:label}"/>
+									<Text id="text5" maxLines="0" text="{Status}"/>
+									<Label id="label6" text="{/#WarehouseOrder/StartBin/@sap:label}"/>
+									<Text id="text6" maxLines="0" text="{StartBin}"/>
+									<core:ExtensionPoint name="extIconTabFilterForm1"/>
+								</f:content>
+							</f:SimpleForm>
+						</content>
+					</IconTabFilter>
+					<IconTabFilter design="Horizontal" icon="sap-icon://task" id="iconTabFilter2" key="" text="Warehouse Task">
+						<content>
+							<OverflowToolbar id="otbSubheader">
+								<ToolbarSpacer/>
+								<SearchField id="maxPrice" liveChange="onFilter">
+									<layoutData><OverflowToolbarLayoutData maxWidth="300px" minWidth="200px"/></layoutData>
+								</SearchField>
+								<Button press="onReset" text="Reset" type="Transparent"/>
+								<OverflowToolbarButton icon="sap-icon://sort" press="onSort" text="Sort" type="Transparent"/>
+								<OverflowToolbarButton icon="sap-icon://group-2" press="onGroup" text="Group" type="Transparent"/>
+							</OverflowToolbar>
+							<Table class="sapUiResponsiveMargin" headerText="Warehouse Tasks" id="__table0" itemPress="onItemDetailPressed" items="{OrderToTasks}"
+								noDataText="No Data" showRowCount="true" width="auto">
+								<headerToolbar/>
+								<columns>
+									<Column id="__column0">
+										<header>
+											<Label text="Header 1"/>
+											<Label id="__label0" text="{/#WarehouseTask/Lgnum/@sap:label}"/>
+										</header>
+									</Column>
+									<Column id="__column1">
+										<header>
+											<Label id="__label1" text="{/#WarehouseTask/Tanum/@sap:label}"/>
+										</header>
+									</Column>
+									<Column id="__column2">
+										<header>
+											<Label id="__label2" text="{/#WarehouseTask/Tostat/@sap:label}"/>
+										</header>
+									</Column>
+								</columns>
+								<ColumnListItem counter="0" id="__item0" press="onLineItemPressed" selected="false" type="Navigation">
+									<cells>
+										<Text class="sapMTableContentMargin" id="__text1" text="{Lgnum}"/>
+										<Text class="sapMTableContentMargin" id="__text2" text="{Tanum}"/>
+										<Text class="sapMTableContentMargin" id="__text3" text="{Tostat}"/>
+									</cells>
+								</ColumnListItem>
+								<customData><core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true"/><core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true"/><core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true"/><core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true"/><core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true"/><core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true"/><core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true"/><core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true"/><core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true"/><core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true"/><core:CustomData key="sap-ui-fastnavgroup" value="true" writeToDom="true"/></customData>
+							</Table>
+						</content>
+					</IconTabFilter>
+					<core:ExtensionPoint name="extIconTabFilter"/>
+				</items>
+			</IconTabBar>
+			<core:ExtensionPoint name="extDetail"/>
+		</content>
+		<footer id="detailFooter">
+			<Toolbar id="detailToolbar">
+				<content>
+					<ToolbarSpacer id="toolbarSpacer"/>
+				</content>
+			</Toolbar>
+		</footer>
+	</Page>
+</mvc:View>
